@@ -26,3 +26,5 @@
 
     ng g c components/shared/navbar
     ng g c components/home
+    ng g c components/about
+    ng g c components/heroes
