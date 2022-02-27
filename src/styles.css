@@ -10,6 +10,16 @@ body {
   width: 120px;
 }
 
+.paraphrase {
+  margin-bottom: 80px;
+}
+
+.carousel-item img {
+  height: 300px;
+  object-fit: cover;
+  background-position: center;
+}
+
 /* Animaciones */
 .animated {
   -webkit-animation-duration: 1s;

@@ -1,9 +1,14 @@
 <div class="animated fadeIn fast">
-  <h2>HEROES</h2>
+  <h2>Héroes <small>Marvel y DC</small></h2>
   <hr />
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quos nulla
-    dignissimos exercitationem quidem nam explicabo mollitia recusandae soluta,
-    quo eius? Ipsa odio aperiam sint velit consectetur! Quam, eligendi ullam!
-  </p>
+
+  <div class="row row-cols-1 row-cols-lg-2 g-4">
+    <app-hero-card
+      (heroSelected)="verHeroe(foo.id)"
+      [index]="foo.id"
+      [heroe]="foo"
+      *ngFor="let foo of heroes"
+    >
+    </app-hero-card>
+  </div>
 </div>

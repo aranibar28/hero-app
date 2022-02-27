@@ -10,6 +10,12 @@ import { HeroesComponent } from './components/heroes/heroes.component';
 // Rutas
 import { APP_ROUTING } from './app.routes';
 
+// Servicios
+import { HeroesService } from './components/services/heroes.service';
+import { HeroeComponent } from './components/heroe/heroe.component';
+import { BuscadorComponent } from './components/buscador/buscador.component';
+import { HeroCardComponent } from './components/hero-card/hero-card.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,9 +23,12 @@ import { APP_ROUTING } from './app.routes';
     HomeComponent,
     AboutComponent,
     HeroesComponent,
+    HeroeComponent,
+    BuscadorComponent,
+    HeroCardComponent,
   ],
   imports: [BrowserModule, APP_ROUTING],
-  providers: [],
+  providers: [HeroesService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
